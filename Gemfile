@@ -23,7 +23,7 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-gem 'ss2', :path => '/Users/saravanaselvansp/Projects/shield_square'
+gem 'ss2', :path => 'https://github.com/kvsrikanth/shield_square'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
