@@ -1,0 +1,18 @@
+- if @shieldsquare_response["responsecode"] == 0
+  = "Allow the user request"
+- elsif @shieldsquare_response["responsecode"] == 1
+  = "Monitor this Traffic"
+- elsif @shieldsquare_response["responsecode"] == 2
+  = "Show CAPTCHA before displaying the content"
+- elsif @shieldsquare_response["responsecode"] == 3
+  = "Block This request"
+- elsif @shieldsquare_response["responsecode"] == 4
+  = "Feed Fake Data"
+- elsif @shieldsquare_response["responsecode"] == -1
+  = "Curl Error - " + @shieldsquare_response["reason"] + "<BR>"
+  = "Please reach out to ShieldSquare support team for assistance <BR>"
+  = "Allow the user request"
+:javascript
+  var __uzdbm_a = '#{@shieldsquare_response["pid"]}';
+%div{:id=>"ss_098786_234239_238479_190541"}
+=javascript_include_tag "https://cdn.perfdrive.com/static/jscall_min.js", :async => "true"
